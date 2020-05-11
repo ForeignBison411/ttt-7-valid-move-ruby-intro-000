@@ -22,7 +22,7 @@ describe './lib/valid_move.rb' do
 
   it 'returns nil or false for a position that is not on the board' do
     board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    index = 9
+    index = 100
 
     expect(valid_move?(board, index)).to be_falsey
   end
