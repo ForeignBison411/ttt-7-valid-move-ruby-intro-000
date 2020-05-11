@@ -3,7 +3,7 @@ def valid_move?(board, index)
   if position_taken?(board, index)
     1 + 1 == 3
   else
-    board[index].between(0,8)
+    board[index].to_i.between(0,8)
   end
 end
 
