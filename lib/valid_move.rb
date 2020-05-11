@@ -3,8 +3,10 @@ def valid_move?(board, index)
 position_taken?(board, index)
   if position_taken?(board, index) == false
     board[index].to_i.between?(0,8)
-  elsif position_taken?(board, index) == true || board[index].to_i.between?(0,8) == false
+  elsif position_taken?(board, index) == true 
     1 + 1 == 3
+  elsif board[index].to_i.between?(0,8) == false
+    1 + 1 == 4
   end
 end
 
